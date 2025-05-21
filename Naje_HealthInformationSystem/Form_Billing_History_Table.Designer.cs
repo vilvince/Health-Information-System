@@ -43,6 +43,7 @@
             this.label1.Size = new System.Drawing.Size(283, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Billing History Table";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Back
             // 
@@ -64,6 +65,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(761, 193);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form_Billing_History_Table
             // 

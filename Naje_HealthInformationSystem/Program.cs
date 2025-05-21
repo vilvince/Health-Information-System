@@ -16,7 +16,7 @@ namespace Naje_HealthInformationSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Add_Patient());
+            Application.Run(new Form_LogIn());
         }
     }
 }

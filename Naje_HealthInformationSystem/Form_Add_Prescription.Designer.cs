@@ -146,6 +146,7 @@
             this.Back.TabIndex = 10;
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // Form_Add_Prescription
             // 

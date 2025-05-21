@@ -40,7 +40,7 @@
             this.label_PatientRegisterPlaceholder = new System.Windows.Forms.Label();
             this.label_TotalPatients = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label_UpcomingAppointmentPlaceholder = new System.Windows.Forms.Label();
+            this.label_UpcomingAppointmentsPlaceholder = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -68,6 +68,7 @@
             this.button_Patients.TabIndex = 0;
             this.button_Patients.Text = "Patients";
             this.button_Patients.UseVisualStyleBackColor = false;
+            this.button_Patients.Click += new System.EventHandler(this.button_Patients_Click);
             // 
             // button_Doctors
             // 
@@ -81,6 +82,7 @@
             this.button_Doctors.TabIndex = 1;
             this.button_Doctors.Text = "Doctors";
             this.button_Doctors.UseVisualStyleBackColor = false;
+            this.button_Doctors.Click += new System.EventHandler(this.button_Doctors_Click);
             // 
             // button_Medical
             // 
@@ -108,6 +110,7 @@
             this.button_Appointments.TabIndex = 3;
             this.button_Appointments.Text = "Appointments";
             this.button_Appointments.UseVisualStyleBackColor = false;
+            this.button_Appointments.Click += new System.EventHandler(this.button_Appointments_Click);
             // 
             // button_Prescription
             // 
@@ -121,6 +124,7 @@
             this.button_Prescription.TabIndex = 4;
             this.button_Prescription.Text = "Prescription";
             this.button_Prescription.UseVisualStyleBackColor = false;
+            this.button_Prescription.Click += new System.EventHandler(this.button_Prescription_Click);
             // 
             // button_Medication
             // 
@@ -134,6 +138,7 @@
             this.button_Medication.TabIndex = 5;
             this.button_Medication.Text = "Medication";
             this.button_Medication.UseVisualStyleBackColor = false;
+            this.button_Medication.Click += new System.EventHandler(this.button_Medication_Click);
             // 
             // button_Billing
             // 
@@ -195,7 +200,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel2.Controls.Add(this.label_UpcomingAppointmentPlaceholder);
+            this.panel2.Controls.Add(this.label_UpcomingAppointmentsPlaceholder);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(186, 237);
@@ -204,15 +209,16 @@
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label_UpcomingAppointmentPlaceholder
+            // label_UpcomingAppointmentsPlaceholder
             // 
-            this.label_UpcomingAppointmentPlaceholder.AutoSize = true;
-            this.label_UpcomingAppointmentPlaceholder.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_UpcomingAppointmentPlaceholder.Location = new System.Drawing.Point(66, 62);
-            this.label_UpcomingAppointmentPlaceholder.Name = "label_UpcomingAppointmentPlaceholder";
-            this.label_UpcomingAppointmentPlaceholder.Size = new System.Drawing.Size(32, 36);
-            this.label_UpcomingAppointmentPlaceholder.TabIndex = 2;
-            this.label_UpcomingAppointmentPlaceholder.Text = "8";
+            this.label_UpcomingAppointmentsPlaceholder.AutoSize = true;
+            this.label_UpcomingAppointmentsPlaceholder.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_UpcomingAppointmentsPlaceholder.Location = new System.Drawing.Point(66, 62);
+            this.label_UpcomingAppointmentsPlaceholder.Name = "label_UpcomingAppointmentsPlaceholder";
+            this.label_UpcomingAppointmentsPlaceholder.Size = new System.Drawing.Size(32, 36);
+            this.label_UpcomingAppointmentsPlaceholder.TabIndex = 2;
+            this.label_UpcomingAppointmentsPlaceholder.Text = "8";
+            this.label_UpcomingAppointmentsPlaceholder.Click += new System.EventHandler(this.label_UpcomingAppointmentsPlaceholder_Click);
             // 
             // label5
             // 
@@ -286,6 +292,7 @@
             this.label_TotalLogsPlaceholder.Size = new System.Drawing.Size(32, 36);
             this.label_TotalLogsPlaceholder.TabIndex = 1;
             this.label_TotalLogsPlaceholder.Text = "8";
+            this.label_TotalLogsPlaceholder.Click += new System.EventHandler(this.label_TotalLogsPlaceholder_Click);
             // 
             // label6
             // 
@@ -365,7 +372,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label_UpcomingAppointmentPlaceholder;
+        private System.Windows.Forms.Label label_UpcomingAppointmentsPlaceholder;
         private System.Windows.Forms.Label label_TotalDoctorPlaceHolder;
         private System.Windows.Forms.Label label_TotalLogsPlaceholder;
         private System.Windows.Forms.Label LogOut;

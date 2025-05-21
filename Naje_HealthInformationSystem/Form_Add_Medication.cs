@@ -21,5 +21,12 @@ namespace Naje_HealthInformationSystem
         {
 
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Just hide the current form
+            Medication_Button_Options MedicationButt = new Medication_Button_Options();
+            MedicationButt.Show();
+        }
     }
 }

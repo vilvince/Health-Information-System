@@ -45,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(40, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 51);
+            this.label1.Size = new System.Drawing.Size(310, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Good to you again!";
             // 
@@ -92,6 +92,7 @@
             this.textBox_Email.Name = "textBox_Email";
             this.textBox_Email.Size = new System.Drawing.Size(259, 35);
             this.textBox_Email.TabIndex = 4;
+            this.textBox_Email.TextChanged += new System.EventHandler(this.textBox_Email_TextChanged);
             // 
             // textBox_Password
             // 
@@ -102,6 +103,7 @@
             this.textBox_Password.PasswordChar = '*';
             this.textBox_Password.Size = new System.Drawing.Size(254, 37);
             this.textBox_Password.TabIndex = 5;
+            this.textBox_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
             // 
             // label_ForgetPasswod
             // 
@@ -112,6 +114,7 @@
             this.label_ForgetPasswod.Size = new System.Drawing.Size(109, 16);
             this.label_ForgetPasswod.TabIndex = 6;
             this.label_ForgetPasswod.Text = "Forget Password";
+            this.label_ForgetPasswod.Click += new System.EventHandler(this.label_ForgetPasswod_Click);
             // 
             // button_LogIn
             // 
@@ -123,6 +126,7 @@
             this.button_LogIn.TabIndex = 7;
             this.button_LogIn.Text = "Logn In";
             this.button_LogIn.UseVisualStyleBackColor = false;
+            this.button_LogIn.Click += new System.EventHandler(this.button_LogIn_Click);
             // 
             // Form_LogIn
             // 

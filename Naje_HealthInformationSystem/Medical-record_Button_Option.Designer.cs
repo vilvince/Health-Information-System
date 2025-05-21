@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button_Medical_Record_Table = new System.Windows.Forms.Button();
-            this.button_Add_Record = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button_Deleted_Medical_Records = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,23 +55,9 @@
             this.button_Medical_Record_Table.Name = "button_Medical_Record_Table";
             this.button_Medical_Record_Table.Size = new System.Drawing.Size(314, 57);
             this.button_Medical_Record_Table.TabIndex = 1;
-            this.button_Medical_Record_Table.Text = "View Medical Recod Table";
+            this.button_Medical_Record_Table.Text = "View Medical Record Table";
             this.button_Medical_Record_Table.UseVisualStyleBackColor = false;
             this.button_Medical_Record_Table.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button_Add_Record
-            // 
-            this.button_Add_Record.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button_Add_Record.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Add_Record.Font = new System.Drawing.Font("LT Saeada", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Add_Record.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_Add_Record.Location = new System.Drawing.Point(85, 276);
-            this.button_Add_Record.Name = "button_Add_Record";
-            this.button_Add_Record.Size = new System.Drawing.Size(314, 55);
-            this.button_Add_Record.TabIndex = 2;
-            this.button_Add_Record.Text = "Add Record";
-            this.button_Add_Record.UseVisualStyleBackColor = false;
-            this.button_Add_Record.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -84,6 +69,7 @@
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Back";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button_Deleted_Medical_Records
             // 
@@ -91,7 +77,7 @@
             this.button_Deleted_Medical_Records.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Deleted_Medical_Records.Font = new System.Drawing.Font("LT Saeada", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Deleted_Medical_Records.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_Deleted_Medical_Records.Location = new System.Drawing.Point(85, 351);
+            this.button_Deleted_Medical_Records.Location = new System.Drawing.Point(85, 271);
             this.button_Deleted_Medical_Records.Name = "button_Deleted_Medical_Records";
             this.button_Deleted_Medical_Records.Size = new System.Drawing.Size(314, 61);
             this.button_Deleted_Medical_Records.TabIndex = 4;
@@ -106,13 +92,12 @@
             this.ClientSize = new System.Drawing.Size(481, 513);
             this.Controls.Add(this.button_Deleted_Medical_Records);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button_Add_Record);
             this.Controls.Add(this.button_Medical_Record_Table);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Medical_record_Button_Option";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medical_record_Button_Option";
             this.Load += new System.EventHandler(this.Medical_record_Button_Option_Load);
             this.ResumeLayout(false);
@@ -124,7 +109,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_Medical_Record_Table;
-        private System.Windows.Forms.Button button_Add_Record;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_Deleted_Medical_Records;
     }

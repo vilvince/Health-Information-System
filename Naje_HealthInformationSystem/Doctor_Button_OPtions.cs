@@ -21,5 +21,26 @@ namespace Naje_HealthInformationSystem
         {
 
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Just hide the current form
+            form_HomePage Homepage = new form_HomePage();
+            Homepage.Show();
+        }
+
+        private void button_Veiw_Doctor_Table_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Just hide the current form
+            Form_Doctors_Table DocTable = new Form_Doctors_Table();
+            DocTable.Show();
+        }
+
+        private void button_Add_New_Doctor_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Just hide the current form
+            Form_Add_Doctor AddDoc = new Form_Add_Doctor();
+            AddDoc.Show();
+        }
     }
 }

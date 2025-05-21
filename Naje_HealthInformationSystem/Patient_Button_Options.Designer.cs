@@ -55,6 +55,7 @@
             this.button_View_Patients_Table.TabIndex = 1;
             this.button_View_Patients_Table.Text = "View Patients Table";
             this.button_View_Patients_Table.UseVisualStyleBackColor = false;
+            this.button_View_Patients_Table.Click += new System.EventHandler(this.button_View_Patients_Table_Click);
             // 
             // button_Add_Patients
             // 
@@ -65,8 +66,9 @@
             this.button_Add_Patients.Name = "button_Add_Patients";
             this.button_Add_Patients.Size = new System.Drawing.Size(216, 54);
             this.button_Add_Patients.TabIndex = 2;
-            this.button_Add_Patients.Text = "Add Patients";
+            this.button_Add_Patients.Text = "Daily Patient Logs";
             this.button_Add_Patients.UseVisualStyleBackColor = false;
+            this.button_Add_Patients.Click += new System.EventHandler(this.button_Add_Patients_Click);
             // 
             // label_Back
             // 
@@ -77,6 +79,7 @@
             this.label_Back.Size = new System.Drawing.Size(38, 16);
             this.label_Back.TabIndex = 3;
             this.label_Back.Text = "Back";
+            this.label_Back.Click += new System.EventHandler(this.label_Back_Click);
             // 
             // Patient_Button_Options
             // 

@@ -54,6 +54,7 @@
             this.Back.Size = new System.Drawing.Size(66, 29);
             this.Back.TabIndex = 1;
             this.Back.Text = "Back";
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // dataGridView1
             // 
@@ -64,6 +65,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(703, 208);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form_Deleted_Medical_Records
             // 
@@ -78,6 +80,7 @@
             this.Name = "Form_Deleted_Medical_Records";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Deleted_Medical_Records";
+            this.Load += new System.EventHandler(this.Form_Deleted_Medical_Records_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

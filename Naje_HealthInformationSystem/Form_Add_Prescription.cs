@@ -36,5 +36,12 @@ namespace Naje_HealthInformationSystem
         {
 
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Just hide the current form
+            Prescription_Button_Option PressButt = new Prescription_Button_Option();
+            PressButt.Show();
+        }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button_View_Appointment_Table = new System.Windows.Forms.Button();
-            this.button_Add_Appointment = new System.Windows.Forms.Button();
+            this.button_View_ActiveAppointment = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -56,19 +56,21 @@
             this.button_View_Appointment_Table.TabIndex = 1;
             this.button_View_Appointment_Table.Text = "View Appointment Table";
             this.button_View_Appointment_Table.UseVisualStyleBackColor = false;
+            this.button_View_Appointment_Table.Click += new System.EventHandler(this.button_View_Appointment_Table_Click);
             // 
-            // button_Add_Appointment
+            // button_View_ActiveAppointment
             // 
-            this.button_Add_Appointment.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button_Add_Appointment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Add_Appointment.Font = new System.Drawing.Font("LT Saeada", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Add_Appointment.ForeColor = System.Drawing.Color.Transparent;
-            this.button_Add_Appointment.Location = new System.Drawing.Point(62, 271);
-            this.button_Add_Appointment.Name = "button_Add_Appointment";
-            this.button_Add_Appointment.Size = new System.Drawing.Size(274, 65);
-            this.button_Add_Appointment.TabIndex = 2;
-            this.button_Add_Appointment.Text = "Add Appointment";
-            this.button_Add_Appointment.UseVisualStyleBackColor = false;
+            this.button_View_ActiveAppointment.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.button_View_ActiveAppointment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_View_ActiveAppointment.Font = new System.Drawing.Font("LT Saeada", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_View_ActiveAppointment.ForeColor = System.Drawing.Color.Transparent;
+            this.button_View_ActiveAppointment.Location = new System.Drawing.Point(41, 260);
+            this.button_View_ActiveAppointment.Name = "button_View_ActiveAppointment";
+            this.button_View_ActiveAppointment.Size = new System.Drawing.Size(316, 65);
+            this.button_View_ActiveAppointment.TabIndex = 2;
+            this.button_View_ActiveAppointment.Text = "View Active Appointments";
+            this.button_View_ActiveAppointment.UseVisualStyleBackColor = false;
+            this.button_View_ActiveAppointment.Click += new System.EventHandler(this.button_Add_Appointment_Click);
             // 
             // back
             // 
@@ -80,6 +82,7 @@
             this.back.Size = new System.Drawing.Size(38, 16);
             this.back.TabIndex = 3;
             this.back.Text = "Back";
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // Appointment_Button_Option
             // 
@@ -87,7 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 480);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.button_Add_Appointment);
+            this.Controls.Add(this.button_View_ActiveAppointment);
             this.Controls.Add(this.button_View_Appointment_Table);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -95,6 +98,7 @@
             this.Name = "Appointment_Button_Option";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment_Button_Option";
+            this.Load += new System.EventHandler(this.Appointment_Button_Option_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,7 +108,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_View_Appointment_Table;
-        private System.Windows.Forms.Button button_Add_Appointment;
+        private System.Windows.Forms.Button button_View_ActiveAppointment;
         private System.Windows.Forms.Label back;
     }
 }

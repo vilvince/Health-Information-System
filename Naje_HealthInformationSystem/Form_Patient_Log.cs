@@ -21,5 +21,10 @@ namespace Naje_HealthInformationSystem
         {
 
         }
+
+        private void Form_Patient_Log_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

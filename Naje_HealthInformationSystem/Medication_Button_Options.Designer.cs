@@ -45,6 +45,7 @@
             this.button_View_Medicine_Table.TabIndex = 0;
             this.button_View_Medicine_Table.Text = "View Medicine Table";
             this.button_View_Medicine_Table.UseVisualStyleBackColor = false;
+            this.button_View_Medicine_Table.Click += new System.EventHandler(this.button_View_Medicine_Table_Click);
             // 
             // button_Add_New_Medicine
             // 
@@ -57,6 +58,7 @@
             this.button_Add_New_Medicine.TabIndex = 1;
             this.button_Add_New_Medicine.Text = "Add New Medicine";
             this.button_Add_New_Medicine.UseVisualStyleBackColor = false;
+            this.button_Add_New_Medicine.Click += new System.EventHandler(this.button_Add_New_Medicine_Click);
             // 
             // label1
             // 
@@ -75,7 +77,7 @@
             this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.Location = new System.Drawing.Point(302, 455);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(63, 28);
+            this.back.Size = new System.Drawing.Size(50, 22);
             this.back.TabIndex = 3;
             this.back.Text = "Back";
             this.back.Click += new System.EventHandler(this.back_Click);

@@ -113,6 +113,7 @@
             this.back.TabIndex = 6;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // textBox_Medication_Name
             // 

@@ -56,6 +56,7 @@
             this.button_View_Billing_Table.TabIndex = 1;
             this.button_View_Billing_Table.Text = "View Billing Table";
             this.button_View_Billing_Table.UseVisualStyleBackColor = false;
+            this.button_View_Billing_Table.Click += new System.EventHandler(this.button_View_Billing_Table_Click);
             // 
             // button_Add_Billing
             // 
@@ -66,7 +67,7 @@
             this.button_Add_Billing.Name = "button_Add_Billing";
             this.button_Add_Billing.Size = new System.Drawing.Size(262, 47);
             this.button_Add_Billing.TabIndex = 2;
-            this.button_Add_Billing.Text = "Add Billing";
+            this.button_Add_Billing.Text = "Billing Summary";
             this.button_Add_Billing.UseVisualStyleBackColor = false;
             this.button_Add_Billing.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -80,6 +81,7 @@
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Back";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button_Billing_History
             // 
@@ -90,8 +92,9 @@
             this.button_Billing_History.Name = "button_Billing_History";
             this.button_Billing_History.Size = new System.Drawing.Size(262, 44);
             this.button_Billing_History.TabIndex = 4;
-            this.button_Billing_History.Text = "Bliing History";
+            this.button_Billing_History.Text = "Billing History";
             this.button_Billing_History.UseVisualStyleBackColor = false;
+            this.button_Billing_History.Click += new System.EventHandler(this.button_Billing_History_Click);
             // 
             // Billing_Button_Option
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button_Veiw_Doctor_Table = new System.Windows.Forms.Button();
-            this.button_Add_New_Doctor = new System.Windows.Forms.Button();
+            this.button_View_DoctorWorkload = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Back = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,19 +46,21 @@
             this.button_Veiw_Doctor_Table.TabIndex = 0;
             this.button_Veiw_Doctor_Table.Text = "View Doctors Table";
             this.button_Veiw_Doctor_Table.UseVisualStyleBackColor = false;
+            this.button_Veiw_Doctor_Table.Click += new System.EventHandler(this.button_Veiw_Doctor_Table_Click);
             // 
-            // button_Add_New_Doctor
+            // button_View_DoctorWorkload
             // 
-            this.button_Add_New_Doctor.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button_Add_New_Doctor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Add_New_Doctor.Font = new System.Drawing.Font("LT Saeada", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Add_New_Doctor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_Add_New_Doctor.Location = new System.Drawing.Point(36, 307);
-            this.button_Add_New_Doctor.Name = "button_Add_New_Doctor";
-            this.button_Add_New_Doctor.Size = new System.Drawing.Size(277, 57);
-            this.button_Add_New_Doctor.TabIndex = 1;
-            this.button_Add_New_Doctor.Text = "Add New Doctor";
-            this.button_Add_New_Doctor.UseVisualStyleBackColor = false;
+            this.button_View_DoctorWorkload.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.button_View_DoctorWorkload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_View_DoctorWorkload.Font = new System.Drawing.Font("LT Saeada", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_View_DoctorWorkload.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button_View_DoctorWorkload.Location = new System.Drawing.Point(24, 310);
+            this.button_View_DoctorWorkload.Name = "button_View_DoctorWorkload";
+            this.button_View_DoctorWorkload.Size = new System.Drawing.Size(301, 57);
+            this.button_View_DoctorWorkload.TabIndex = 1;
+            this.button_View_DoctorWorkload.Text = "View Doctor Workload";
+            this.button_View_DoctorWorkload.UseVisualStyleBackColor = false;
+            this.button_View_DoctorWorkload.Click += new System.EventHandler(this.button_Add_New_Doctor_Click);
             // 
             // label1
             // 
@@ -80,6 +82,7 @@
             this.Back.Size = new System.Drawing.Size(56, 25);
             this.Back.TabIndex = 3;
             this.Back.Text = "Back";
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // Doctor_Button_OPtions
             // 
@@ -88,7 +91,7 @@
             this.ClientSize = new System.Drawing.Size(349, 512);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button_Add_New_Doctor);
+            this.Controls.Add(this.button_View_DoctorWorkload);
             this.Controls.Add(this.button_Veiw_Doctor_Table);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -104,7 +107,7 @@
         #endregion
 
         private System.Windows.Forms.Button button_Veiw_Doctor_Table;
-        private System.Windows.Forms.Button button_Add_New_Doctor;
+        private System.Windows.Forms.Button button_View_DoctorWorkload;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Back;
     }
